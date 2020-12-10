@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>User Info Page</title>
+</head>
+<body>
+<h1>Below are the User Information</h1>
+<div>
+	{% if user_info %}
+	<ol>
+		{% for info in user_info %}
+		<li>User Information</li>
+			<ul>
+			<li>First Name: {{info.firstName}}</li>
+			<li>Last Name: {{info.lastName}}</li>
+			<li>Email Address: {{info.email}}</li>
+			</ul>
+		{% endfor %}	
+	</ol>
+	{% else %}
+	<p>No user Information available to show</p>
+	{% endif %}
+</div>
+</body>
+</html>

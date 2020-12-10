@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Base Page</title>
+</head>
+<body>
+<nav class='navbar navbar-default navbar-static-top'>
+	<div class='container'>
+	<ul class='nav navbar-nav'>
+		<li><a class='navbar-brand' href="{% url 'index' %}">DJANGO</a></li>
+		<li><a class='navbar-link' href="{% url 'admin:index' %}">Admin</a></li>
+		<li><a class='navbar-link' href="{% url 'InfoApp:registration' %}"></a>Register</li>	
+	</ul>		
+	</div>	
+</nav>
+
+{% block body_block %}
+{% endblock%}
+</body>
+</html>

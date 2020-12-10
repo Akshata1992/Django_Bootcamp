@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>User Info Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class='container'>
+	<div class='jumbotron'>
+	<h1>Please Sign Up here!</h1>
+	<p>This is User Information page</p>
+	</div>
+	<form method='POST'>
+		{{form.as_p}}
+		{% csrf_token %}
+		<input class='btn btn-primary' type="submit" value="Submit">
+	</form>	
+</div>
+</body>
+</html>

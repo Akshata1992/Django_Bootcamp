@@ -1,0 +1,37 @@
+body{
+	background-color: #b0e0e6;
+}
+
+h1{
+	border: 1px solid;
+}
+
+h2{
+	color: purple;
+}
+div p{
+  background:#fffca5;
+}
+
+#list1{
+	color: purple;
+}
+
+a{
+	color:red;
+}
+
+input{
+	border-color: red;
+}
+
+.feedback{
+	border:5px dashed yellow;
+	background-color: blue;
+}
+
+textarea{
+	border: 5px solid gray;
+	width: 800px;
+	height: 400px;
+}
